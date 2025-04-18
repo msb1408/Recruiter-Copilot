@@ -1,4 +1,4 @@
-# Recruiter-Copilot
+# Recruiter Copilot
 ИИ-ассистент по подбору персонала.
 
 Это прототип.
