@@ -1,0 +1,263 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  min-height: 200px;
+}
+
+.button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.result-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.result-block {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-block h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3498db;
+}
+
+.personal-info p {
+  margin: 0.5rem 0;
+}
+
+.education-item,
+.experience-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.education-item p,
+.experience-item p {
+  margin: 0.5rem 0;
+}
+
+.responsibilities,
+.achievements {
+  margin-top: 1rem;
+}
+
+.responsibilities ul,
+.achievements ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.competencies-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.competencies-section h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.competency-item {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.competency-item p {
+  margin: 0.5rem 0;
+}
+
+.suggestions ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.additional-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skills,
+.languages,
+.certificates,
+.links,
+.hobbies {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.skills h4,
+.languages h4,
+.certificates h4,
+.links h4,
+.hobbies h4 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.skills ul,
+.languages ul,
+.certificates ul,
+.links ul,
+.hobbies ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.links a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Стили для разных типов компетенций */
+.competencies-section.matching {
+  border-left: 4px solid #2ecc71;
+}
+
+.competencies-section.missing {
+  border-left: 4px solid #e74c3c;
+}
+
+.competencies-section.extra {
+  border-left: 4px solid #f1c40f;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.match-percentage {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.competencies-table {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+.competencies-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+.competencies-table th,
+.competencies-table td {
+  padding: 0.8em;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.competencies-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.competencies-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.competencies-table tr:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .competencies-table {
+    font-size: 0.9em;
+  }
+  
+  .competencies-table th,
+  .competencies-table td {
+    padding: 0.5em;
+  }
+}
